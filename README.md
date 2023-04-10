@@ -8,6 +8,6 @@
 
 ## ライセンス / LICENSE
 
-Copyright (C) 2023 Daiji Suzuki, with Reserved Font Name 'Nezen'.
+Copyright (C) 2023 Daiji Suzuki.
 
 寝禅は ZEN アンチック Soft の派生フォントになるため SIL Open Font License 1.1 です。
