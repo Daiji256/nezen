@@ -1,0 +1,8 @@
+@font-face {
+    font-family: Nezen;
+    src: url(../Nezen.ttf) format('truetype');
+}
+
+body {
+    font-family: Nezen, sans-serif;
+}
