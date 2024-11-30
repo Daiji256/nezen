@@ -1,8 +1,114 @@
 @font-face {
-    font-family: Nezen;
-    src: url(../Nezen.ttf) format('truetype');
+    font-family: "Nezen Antique Regular";
+    src: url(../fonts/NezenAntique/NezenAntique-Regular.ttf) format('truetype');
 }
 
-body {
-    font-family: Nezen, sans-serif;
+@font-face {
+    font-family: "Nezen Antique Soft Regular";
+    src: url(../fonts/NezenAntiqueSoft/NezenAntiqueSoft-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Nezen Kaku Gothic Antique Light";
+    src: url(../fonts/NezenKakuGothicAntique/NezenKakuGothicAntique-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Nezen Kaku Gothic Antique Regular";
+    src: url(../fonts/NezenKakuGothicAntique/NezenKakuGothicAntique-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Nezen Kaku Gothic Antique Medium";
+    src: url(../fonts/NezenKakuGothicAntique/NezenKakuGothicAntique-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Nezen Kaku Gothic Antique Bold";
+    src: url(../fonts/NezenKakuGothicAntique/NezenKakuGothicAntique-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Nezen Kaku Gothic Antique Black";
+    src: url(../fonts/NezenKakuGothicAntique/NezenKakuGothicAntique-Black.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Nezen Kaku Gothic New Light";
+    src: url(../fonts/NezenKakuGothicNew/NezenKakuGothicNew-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Nezen Kaku Gothic New Regular";
+    src: url(../fonts/NezenKakuGothicNew/NezenKakuGothicNew-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Nezen Kaku Gothic New Medium";
+    src: url(../fonts/NezenKakuGothicNew/NezenKakuGothicNew-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Nezen Kaku Gothic New Bold";
+    src: url(../fonts/NezenKakuGothicNew/NezenKakuGothicNew-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Nezen Kaku Gothic New Black";
+    src: url(../fonts/NezenKakuGothicNew/NezenKakuGothicNew-Black.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Nezen Kurenaido Regular";
+    src: url(../fonts/NezenKurenaido/NezenKurenaido-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Nezen Maru Gothic Light";
+    src: url(../fonts/NezenMaruGothic/NezenMaruGothic-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Nezen Maru Gothic Regular";
+    src: url(../fonts/NezenMaruGothic/NezenMaruGothic-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Nezen Maru Gothic Medium";
+    src: url(../fonts/NezenMaruGothic/NezenMaruGothic-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Nezen Maru Gothic Bold";
+    src: url(../fonts/NezenMaruGothic/NezenMaruGothic-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Nezen Maru Gothic Black";
+    src: url(../fonts/NezenMaruGothic/NezenMaruGothic-Black.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Nezen Old Mincho Regular";
+    src: url(../fonts/NezenOldMincho/NezenOldMincho-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Nezen Old Mincho Medium";
+    src: url(../fonts/NezenOldMincho/NezenOldMincho-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Nezen Old Mincho SemiBold";
+    src: url(../fonts/NezenOldMincho/NezenOldMincho-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Nezen Old Mincho Bold";
+    src: url(../fonts/NezenOldMincho/NezenOldMincho-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Nezen Old Mincho Black";
+    src: url(../fonts/NezenOldMincho/NezenOldMincho-Black.ttf) format('truetype');
 }
