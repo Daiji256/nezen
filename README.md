@@ -1,13 +1,12 @@
 # 寝禅 / Nezen
 
-[ZEN アンチック Soft](https://github.com/googlefonts/zen-antique) の和文字フォントを 90 度回転させた「寝禅」を作りました。寝禅は，縦書きで文章を表現することが難しいシステムでも，簡単に縦書きを実現するために作成されました。現在（v0.1）では個々の記号の回転向きの調整や，文字の位置調整は行なっていません。
+[Zen Antique](hhttps://fonts.google.com/specimen/Zen+Antique)や[Zen Kaku Gothic Antique](https://fonts.google.com/specimen/Zen+Kaku+Gothic+Antique)などのフォントの和文字を90度回転させた「寝禅 / Nezen」を作りました。縦書きで文章を表現することが難しいシステムで縦書きを実現することを目的に作成されました。現在（v0.2）では個々の記号の回転や位置は調整していません。
 
-「寝禅」というのは，禅を 90 度横に倒したことから，横になって行う禅の寝禅から直接名づけました。
+横になって行う禅の寝禅が名前の由来です。
 
-![sample/img1.png](sample/img1.png)
+![sample](sample/image.png)
 
 ## ライセンス / LICENSE
 
-Copyright (C) 2023 Daiji Suzuki, with Reserved Font Name 'Nezen'.
-
-寝禅は ZEN アンチック Soft の派生フォントになるため SIL Open Font License 1.1 です。
+- ソースコード：[MIT](LICENSE) © [Daiji256](https://github.com/Daiji256)
+- フォント：[SIL OPEN FONT LICENSE Version 1.1](fonts/NezenAntique/OFL.txt)
