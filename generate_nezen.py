@@ -186,6 +186,10 @@ for source in sources:
             if unicode == 0x30FB:
                 glyph.addPosSub("HALT_Lookup_Sub", -quarter_width, 0, -half_width, 0)
 
+    ff.createChar(0xFF5E)
+    ff[0xFF5E].addReference(ff[0x301C].glyphname)
+    ff[0xFF5E].width = ff[0x301C].width
+
     ff.generate(
         "fonts/" + nezen_file_name + "/" + nezen_file_name + "-" + weight + ".ttf"
     )
