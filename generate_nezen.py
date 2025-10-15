@@ -73,6 +73,24 @@ for source in sources:
         [ff.getLookupSubtables(x) for x in vertical_lookups], ()
     )
 
+    ff.addLookup(
+        "HALT_Lookup",
+        "gpos_single",
+        None,
+        (
+            (
+                "halt",
+                (
+                    ("DFLT", ("dflt",)),
+                    ("latn", ("dflt",)),
+                    ("hani", ("dflt",)),
+                    ("kana", ("dflt",)),
+                ),
+            ),
+        ),
+    )
+    ff.addLookupSubtable("HALT_Lookup", "HALT_Lookup_Sub")
+
     for glyph in ff.glyphs():
         unicode = glyph.unicode
         if (
@@ -100,7 +118,7 @@ for source in sources:
             or 0x03190 <= unicode <= 0x0319F  # Kanbun
             or 0x030A0 <= unicode <= 0x030FF  # Katakana
             or 0x031F0 <= unicode <= 0x031FF  # Katakana Phonetic Extensions
-            or 0x0FF00 <= unicode <= 0x0FF5A  # Fullwidth Forms 1
+            or 0x0FF00 <= unicode <= 0x0FF60  # Fullwidth Forms 1
             or 0x0FFE0 <= unicode <= 0x0FFFF  # Fullwidth Forms 2
             or 0x18B00 <= unicode <= 0x18CFF  # Khitan Small Script
             or 0x03000 <= unicode <= 0x0303F  # CJK Symbols and Punctuation
@@ -123,6 +141,50 @@ for source in sources:
             )
             glyph.transform(matrix)
             glyph.width = ff.em
+
+            half_width = int(glyph.width / 2)
+            quarter_width = int(glyph.width / 4)
+
+            if unicode in (
+                0x3001,
+                0xFF0C,
+                0x3002,
+                0xFF0E,
+                0xFF09,
+                0xFF60,
+                0x300D,
+                0x300F,
+                0xFF3D,
+                0x301B,
+                0xFF5D,
+                0x3011,
+                0x3017,
+                0x3009,
+                0x300B,
+                0x3015,
+                0x3019,
+            ):
+                glyph.addPosSub("HALT_Lookup_Sub", 0, 0, -half_width, 0)
+
+            if unicode in (
+                0xFF08,
+                0xFF5F,
+                0x300C,
+                0x300E,
+                0xFF3B,
+                0x301A,
+                0xFF5B,
+                0x3010,
+                0x3016,
+                0x3008,
+                0x300A,
+                0x3014,
+                0x3018,
+            ):
+                glyph.addPosSub("HALT_Lookup_Sub", -half_width, 0, -half_width, 0)
+
+            if unicode == 0x30FB:
+                glyph.addPosSub("HALT_Lookup_Sub", -quarter_width, 0, -half_width, 0)
 
     ff.generate(
         "fonts/" + nezen_file_name + "/" + nezen_file_name + "-" + weight + ".ttf"
